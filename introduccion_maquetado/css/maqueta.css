@@ -1,0 +1,44 @@
+* {
+   outline: 1px solid #def;
+}
+
+
+/* resets */
+
+li {
+   list-style: none;
+}
+img {
+   max-width: 100%;
+}
+
+
+/* Ejemplo de Diseño Responsivo con Media Queries */
+
+body {
+   transition: background-color 0.6s ease-in-out;
+}
+
+@media screen and (min-width:0) {
+   body {
+      background-color: #fa0;
+   }
+}
+
+@media screen and (min-width:768px) {
+   body {
+      background-color: #0af;
+   }
+}
+
+@media screen and (min-width:992px) {
+   body {
+      background-color: #f0a;
+   }
+}
+
+@media screen and (min-width:1200px) {
+   body {
+      background-color: #ffa;
+   }
+}

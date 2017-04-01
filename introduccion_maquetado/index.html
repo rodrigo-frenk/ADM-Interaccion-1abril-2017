@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>
+      Introducción Maquetado
+   </title>
+
+   <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+
+   <link rel="stylesheet" href="recursos/font-awesome-4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="css/maqueta.css">
+
+</head>
+<body>
+
+   <!-- header#cabecera.container-fluid -->
+   <header id="cabecera" class="container-fluid">
+
+      <!-- #logotipo.col-xs-3 -->
+      <a href="#" id="logotipo" class="col-xs-3 col-md-2">
+         <img src="http://fakeimg.pl/200x100?text=LOGO" alt="">
+      </a>
+
+      <!-- nav#menu-principal.col-md-8{Menú Principal} -->
+      <nav id="menu-principal" class="col-md-8 hidden-xs hidden-sm">
+
+         <!-- ul>(li.col-md-3>a{Elemento Menú $})*4 -->
+         <ul>
+            <li class="col-md-3">
+               <a href="">
+                  Elemento Menú 1
+               </a>
+            </li>
+            <li class="col-md-3">
+               <a href="">
+                  Elemento Menú 2
+               </a>
+            </li>
+            <li class="col-md-3">
+               <a href="">
+                  Elemento Menú 3
+               </a>
+            </li>
+            <li class="col-md-3">
+               <a href="">
+                  Elemento Menú 4
+               </a>
+            </li>
+         </ul>
+
+
+      </nav>
+
+      <!-- nav#menu-usuarios.col-xs-6 -->
+      <nav id="menu-usuarios" class="col-xs-6 col-md-2">
+
+         <!-- ul>(li.col-xs-6>a>span{icono $}+span{Etiqueta $})*2 -->
+         <ul>
+            <li class="col-xs-6">
+               <a href="">
+                  <span class="col-xs-12">
+                     <!-- i.fa.fa-user -->
+                     <i class="fa fa-user-plus"></i>
+                  </span>
+                  <span class="col-xs-12">Registro</span>
+               </a>
+            </li>
+            <li class="col-xs-6">
+               <a href="">
+                  <span class="col-xs-12">
+                     <!-- i.fa.fa-user -->
+                     <i class="fa fa-user"></i>
+                  </span>
+                  <span class="col-xs-12">Ingreso</span>
+               </a>
+            </li>
+         </ul>
+
+
+      </nav>
+
+      <!-- a#boton-menu-movil.col-xs-3 -->
+      <a href="#" id="boton-menu-movil" class="col-xs-3 visible-xs visible-sm">
+         <i class="fa fa-bars"></i>
+      </a>
+
+   </header>
+
+
+   <!-- main#principal.container -->
+   <main id="principal" class="container">
+
+      Principal
+
+   </main>
+
+
+   <!-- footer#pie-pagina.container-fluid -->
+   <footer id="pie-pagina" class="container-fluid">
+
+      Pie de Página
+
+   </footer>
+
+   <script src="recursos/jquery/jquery-3.2.0.min.js"></script>
+   <script src="recursos/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+   <script src="js/maqueta.js"></script>
+
+</body>
+</html>
