@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
    <title>
       Introducción Maquetado
    </title>
@@ -21,64 +22,70 @@
 <body>
 
    <!-- header#cabecera.container-fluid -->
-   <header id="cabecera" class="container-fluid">
+   <header id="cabecera" class="container-fluid h-1x">
 
       <!-- #logotipo.col-xs-3 -->
-      <a href="#" id="logotipo" class="col-xs-3 col-md-2">
+      <a href="#" id="logotipo" class="col-xs-3 col-md-2 h-100 imgLiquidNoFillLeft">
          <img src="http://fakeimg.pl/200x100?text=LOGO" alt="">
       </a>
 
       <!-- nav#menu-principal.col-md-8{Menú Principal} -->
-      <nav id="menu-principal" class="col-md-8 hidden-xs hidden-sm">
+      <nav id="menu-principal" class="col-md-8 hidden-xs hidden-sm h-100">
 
          <!-- ul>(li.col-md-3>a{Elemento Menú $})*4 -->
-         <ul>
-            <li class="col-md-3">
-               <a href="">
+         <ul class="h-100">
+
+            <li class="col-md-3 h-100 v-center">
+               <a href="" class="col-xs-12">
+                  Menú 1
+               </a>
+            </li>
+            <li class="col-md-3 h-100 v-center">
+               <a href="" class="col-xs-12">
                   Elemento Menú 1
                </a>
             </li>
-            <li class="col-md-3">
-               <a href="">
-                  Elemento Menú 2
+            <li class="col-md-3 h-100 v-center">
+               <a href="" class="col-xs-12">
+                  Menú 1
                </a>
             </li>
-            <li class="col-md-3">
-               <a href="">
-                  Elemento Menú 3
+            <li class="col-md-3 h-100 v-center">
+               <a href="" class="col-xs-12">
+                  Elemento Menú 1
                </a>
             </li>
-            <li class="col-md-3">
-               <a href="">
-                  Elemento Menú 4
-               </a>
-            </li>
+
          </ul>
 
 
       </nav>
 
       <!-- nav#menu-usuarios.col-xs-6 -->
-      <nav id="menu-usuarios" class="col-xs-6 col-md-2">
+      <nav id="menu-usuarios" class="col-xs-6 col-md-2 text-center">
 
          <!-- ul>(li.col-xs-6>a>span{icono $}+span{Etiqueta $})*2 -->
          <ul>
             <li class="col-xs-6">
                <a href="">
-                  <span class="col-xs-12">
+                  <div>
                      <!-- i.fa.fa-user -->
                      <i class="fa fa-user-plus"></i>
-                  </span>
-                  <span class="col-xs-12">Registro</span>
+                  </div>
+                  <div>
+                     Registro
+                  </div>
                </a>
             </li>
             <li class="col-xs-6">
                <a href="">
-                  <span class="col-xs-12">
+                  <div>
                      <!-- i.fa.fa-user -->
                      <i class="fa fa-user"></i>
-                  </span>
-                  <span class="col-xs-12">Ingreso</span>
+                  </div>
+                  <div>
+                     Ingreso
+                  </div>
                </a>
             </li>
          </ul>
@@ -87,17 +94,79 @@
       </nav>
 
       <!-- a#boton-menu-movil.col-xs-3 -->
-      <a href="#" id="boton-menu-movil" class="col-xs-3 visible-xs visible-sm">
+      <a href="#" id="boton-menu-movil" class="col-xs-3 visible-xs visible-sm text-right">
          <i class="fa fa-bars"></i>
       </a>
 
    </header>
 
 
-   <!-- main#principal.container -->
-   <main id="principal" class="container">
 
-      Principal
+
+   <!-- main#principal.container -->
+   <main id="principal" class="container-fluid p-0">
+
+      <!-- section.container{Sección $}*4 -->
+
+      <section id="portada" class="container-fluid p-0 rel">
+         <!-- - Imagen de Fondo -->
+         <!-- #portada-fondo.imagen.h-50-v.h-md-65-v -->
+
+         <div id="portada-fondo" class="imagen imgLiquidFill w-100 h-50-v h-md-65-v abs z-1">
+
+            <!-- img[src=http://unsplash.it/1200/500?random=1] -->
+            <img src="http://unsplash.it/1200/500?random=1" alt="">
+
+         </div>
+
+         <div class="cortina w-100 h-50-v h-md-65-v abs z-1"></div>
+
+         <!-- .col-md-7.h-50-v.h-md-65-v.abs.z0 -->
+         <div class="col-md-7 h-50-v h-md-65-v v-center">
+
+            <!-- - Título -->
+            <h1>Título Completo del Sitio</h1>
+
+            <!-- - Descripción (1 párrafo de máx 16 palabras) -->
+            <!-- p>lorem16 -->
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsam cupiditate dolores, perferendis molestias nesciunt quas?
+            </p>
+
+         </div>
+         <!-- .col-md-5.h-50-v.h-md-65-v.abs.z0 -->
+         <div class="col-md-5 h-50-v h-md-65-v v-center text-center">
+
+            <!-- - Call To Action: Invitación a Registrarse
+            - 1 Enunciado
+            - 1 Botón -->
+
+            <!-- p>lorem12 -->
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nostrum dolores magni?
+            </p>
+
+            <!-- a[#].btn.btn-primary{Regístrate} -->
+            <a href="#" class="btn btn-primary">
+               Regístrate
+            </a>
+
+         </div>
+
+      </section>
+
+      <section class="container">
+         Sección 2
+      </section>
+
+      <section class="container">
+         Sección 3
+      </section>
+
+      <section class="container">
+         Sección 4
+      </section>
+
 
    </main>
 
@@ -109,8 +178,11 @@
 
    </footer>
 
+
    <script src="recursos/jquery/jquery-3.2.0.min.js"></script>
    <script src="recursos/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+   <script src="recursos/imgLiquid-master/js/imgLiquid-min.js"></script>
 
    <script src="js/maqueta.js"></script>
 
