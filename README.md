@@ -12,6 +12,6 @@ Curso de Introducción a la Interacción. Diseño UX y programación.
 
 
 #### Bibliografía
-[Posicionamiento CSS](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
-[Retícula/Grid de Bootstrap](http://getbootstrap.com/css/#grid)
-[Sintaxis de Emmet](https://docs.emmet.io/abbreviations/syntax/)
+- [Posicionamiento CSS](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
+- [Retícula/Grid de Bootstrap](http://getbootstrap.com/css/#grid)
+- [Sintaxis de Emmet](https://docs.emmet.io/abbreviations/syntax/)
