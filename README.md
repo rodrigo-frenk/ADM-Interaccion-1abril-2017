@@ -7,6 +7,7 @@ Curso de Introducción a la Interacción. Diseño UX y programación.
 - Diseño UX
 - Maquetación
 - Programación con Javascript
+- Introducción a jQuery
 - Uso de git
 
 
