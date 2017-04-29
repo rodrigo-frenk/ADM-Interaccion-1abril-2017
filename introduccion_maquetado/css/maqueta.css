@@ -67,9 +67,7 @@ body {
    height: 100%;
 }
 
-.h-a {
-   height: auto;
-}
+.h-a {}
 
 .h-50-v {
    /*h50vh*/

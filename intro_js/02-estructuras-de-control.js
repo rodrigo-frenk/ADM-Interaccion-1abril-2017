@@ -41,7 +41,22 @@ if( edadAsistente >= 18 && ( tieneBoleto || estaEnLaLista ) ) {
 
 edad = 15
 
-switch( edad ) {
+
+/*
+
+if (edad == 0) {
+   // hacer algo
+} else if (edad == 1) {
+   // hacer algo
+} else {
+   if( edad === 8 ) {
+
+   }
+}
+
+*/
+
+switch (edad) {
 
   case 0:
     console.log('nace')
@@ -114,11 +129,13 @@ while( i < 10 ) {
 // concierto
 
 numeroDeAsistentes = 0
-cupoMaximo = 10
+cupoMaximo = 100
 
 while( numeroDeAsistentes < cupoMaximo ) {
 
+   // generar una edad aleatoria entre 0 y 80
   edadAsistente = Math.floor(Math.random() * 80)
+  // generar un valor aleatorio, 0 o 1. puede ser usado como booleano
   tieneBoleto = Math.round( Math.random() )
 
   console.log( 'edad', edadAsistente, 'boleto', tieneBoleto )

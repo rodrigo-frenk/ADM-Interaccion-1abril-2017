@@ -1,87 +1,9 @@
-// Objetos y Arreglos
-
-
-// Objeto
-// conjunto de propiedad asociadas a valores
-
-objeto = {
-  propiedad1: 'valor1',
-  propiedad2: 'valor2',
-  propiedad3: 'valor3',
-}
-
-console.log(objeto.propiedad2)
-
-
-
-persona = {
-  nombres: 'Ernesto',
-  apellidoPaterno: 'Torres',
-  apellidoMaterno: 'Corona',
-  edad: 30,
-  ocupacion: 'Vendedor'
-}
-
-
-/*
-Ejercicio: mostrar el contenido del objeto anterior
-en el siguiente formato:
-*/
-
-'Torres Corona, Ernesto. 30 años. Vendedor.'
-
-console.log(
-  persona.apellidoPaterno + ' ' + persona.apellidoMaterno + ', '
-  + persona.nombres + '. ' + persona.edad + ' años. '
-  + persona.ocupacion
-)
-
-
-objeto = {
-  a: 123,
-  propiedadInutil: '...'
-}
-
-objeto.a = 987
-
-objeto.b = 456
-
-console.log( objeto )
-// sintaxis alternativa para recuperar una propiedad:
-console.log( objeto['b'] )
-
-// eliminar una propiedad de un objeto
-
-delete objeto.propiedadInutil
-
-console.log( objeto )
-
-
-
-
-// Métodos de Objetos:
-
-// un mètodo es una funcion que es parte del objeto, y que puede ser invocado en cualquier momento
-
-persona = {
-  nombres: 'Ernesto',
-  apellidoPaterno: 'Torres',
-  apellidoMaterno: 'Corona',
-  edad: 30,
-  ocupacion: 'Vendedor',
-  // método para obtener el nombre completo
-  nombreCompleto: function() {
-    return this.nombres + ' ' + this.apellidoPaterno + ' ' + this.apellidoMaterno
-  }
-}
-
-console.log( persona.nombreCompleto() )
-
+// Arreglos y Objetos
 
 
 // Arreglos
 
-// Secuencias de Datos ordenadas de manera lineal
+// Secuencias de Datos ordenada de manera lineal
 
 arreglo = [ 17, 41, 122, 33 ]
 
@@ -140,7 +62,7 @@ ultimafruta = frutas.pop()
 
 // quitar un elemento en una posicion determinada
 
-// metodo splice lleva
+// metodo 'splice' lleva
 // 1) el indice que queremos quitar y
 // 2) el numero de elementos que queremos quitar
 
@@ -157,7 +79,118 @@ frutas.splice( 3, 1 )
 frutas.indexOf( 'manzana' )
 
 
+// eliminar un elemento conociendo su valor:
 
 indice = frutas.indexOf('naranja')
-if( indice >= 0 )
-  frutas.splice( indice, 1 )
+if( indice >= 0 ) {
+   frutas.splice( indice, 1 )
+}
+
+
+
+
+
+
+
+
+  // Objeto
+  // conjunto de propiedades asociadas a valores
+
+  objeto = {
+    propiedad1: 'valor1',
+    propiedad2: 'valor2',
+    propiedad3: 'valor3',
+  }
+
+  // podemos recuperar una propiedad usando el punto '.'
+  console.log(objeto.propiedad2)
+
+
+
+  persona = {
+    nombres: 'Ernesto',
+    apellidoPaterno: 'Torres',
+    apellidoMaterno: 'Corona',
+    edad: 30,
+    ocupacion: 'Vendedor'
+  }
+
+
+  /*
+  Ejercicio: mostrar el contenido del objeto anterior
+  en el siguiente formato:
+  */
+
+  'Torres Corona, Ernesto. 30 años. Vendedor.'
+
+  console.log(
+    persona.apellidoPaterno + ' ' + persona.apellidoMaterno + ', '
+    + persona.nombres + '. ' + persona.edad + ' años. '
+    + persona.ocupacion
+  )
+
+
+  objeto = {
+    a: 123,
+    propiedadInutil: '...'
+  }
+  // modificar el valor de una propiedad
+  objeto.a = 987
+
+  // añadir una propiedad
+  objeto.b = 456
+
+  console.log( objeto )
+  // sintaxis alternativa para recuperar una propiedad:
+  console.log( objeto['b'] )
+
+  // eliminar una propiedad de un objeto (junto con su valor)
+
+  delete objeto.propiedadInutil
+
+  console.log( objeto )
+
+
+
+
+  // Métodos de Objetos:
+
+  // un mètodo es una funcion que es parte del objeto, y que puede ser invocado en cualquier momento
+
+  persona = {
+    nombres: 'Ernesto',
+    apellidoPaterno: 'Torres',
+    apellidoMaterno: 'Corona',
+    edad: 30,
+    ocupacion: 'Vendedor',
+    // método para obtener el nombre completo
+    nombreCompleto: function() {
+      return this.nombres + ' ' + this.apellidoPaterno + ' ' + this.apellidoMaterno
+    }
+  }
+
+  console.log( persona.nombreCompleto() )
+
+
+
+
+
+
+
+/// Arreglo de Objetos
+
+
+personas = [
+   {
+      nombres: 'Juan',
+      apellidos: 'Pérez Guzmán'
+   },
+   {
+      nombres: 'Elisa',
+      apellidos: 'Ramos Guzmán'
+   },
+   {
+      nombres: 'Pedro',
+      apellidos: 'García Torres'
+   }
+]

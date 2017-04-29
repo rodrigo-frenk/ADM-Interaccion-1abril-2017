@@ -36,6 +36,20 @@ unaVariable = { propiedad: 'valor' } // Objeto
 unaVariable = function() { alert(123) } // Funcion
 
 
+// otros lenguajes tienene tipos fijos, lo que requiere
+// especificar el tipo de dato:
+
+/*
+P.ej:
+
+int numero = 0;
+float decimal = 0.7;
+String cadenaCaracteres = 'algo';
+etc...
+
+*/
+
+
 // operador de asignacion
 
 a = 2
@@ -61,6 +75,7 @@ console.log( 'la división de ' + a + ' entre ' + b + ' es: ' + c )
 c = b % a
 console.log( 'el residuo de la división de ' + b + ' entre ' + a + ' es: ' + c )
 
+// algunas funciones matematicas para complementar:
 
 c = Math.pow( a, b )
 console.log( 'la potencia ' + b + ' de ' + a + ' es: ' + c )
@@ -100,7 +115,7 @@ a--
 a = 3
 b = 4
 
-// hacen una pregunta, devuelven una Booleana
+// hacen una pregunta, devuelven una Booleana ('true' o 'false')
 
 a == b // igual a
 a === b // idéntico a
@@ -134,4 +149,4 @@ a < b || a === b
 
 // operador ternario
 
-resultado = ( a < b ) ? 'cierto' : 'falso's
+resultado = ( a < b ) ? 'cierto' : 'falso'

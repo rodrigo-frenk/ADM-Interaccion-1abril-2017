@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+   <title>Introducción a jQuery</title>
+
+   <style>
+
+      .titulo {
+         text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+      }
+
+      .mayusculas {
+         /*ttu*/
+         text-transform: uppercase;
+      }
+
+      .gris {
+         color: grey !important;
+      }
+
+      body, #texto-scroll {
+         transition: background-color 0.5s ease-in-out;
+      }
+
+      body {
+         overflow: hidden;
+      }
+
+      #texto-scroll {
+         position: absolute;
+         top: 0;
+
+         /* medidas de porcentaje en la pantalla: */
+         left: 100vw;
+         width: 100vw;
+         height: 100vh;
+
+         padding: 100px;
+         padding-top: 0;
+         padding-bottom: 0;
+
+         color: white;
+
+         font-family: 'Arial';
+
+      /*
+      la sig. regla sirve para
+      que la dimnension de la caja
+      no varíe con su padding:
+      */
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+
+         background-color: #f3a;
+
+         /*oya*/
+         overflow-y: auto;
+      }
+
+   </style>
+
+</head>
+<body>
+
+   <div id="titulares">
+
+      <h1 class="titulo gris">Un título</h1>
+
+      <h2 class="titulo gris">Otro título</h2>
+
+   </div>
+
+   <!-- #botones>button#boton_${Botón $}*2 -->
+   <div id="botones">
+      <button id="boton_1">
+         Botón 1
+      </button>
+      <button id="boton_2">
+         Botón 2
+      </button>
+   </div>
+
+   <!-- #texto-scroll>(p>lorem18)*20 -->
+   <div id="texto-scroll">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque consequatur officiis, facilis et tempora, omnis repellendus. Enim, hic!</p>
+      <p>Debitis adipisci repellendus asperiores laboriosam libero ad commodi illum, natus! Minus nesciunt quam quas nostrum dolor quae aperiam!</p>
+      <p>Molestiae porro error officiis iusto consequuntur natus, magnam expedita quia. Deleniti corporis iste nesciunt doloribus iure commodi cum.</p>
+      <p>Molestias, nesciunt dolor omnis, quasi sed architecto magnam ducimus fugiat dolorem. Natus quasi molestias deserunt, neque ipsa cum.</p>
+      <p>Quos dolores tempora, accusantium ipsam sint inventore perspiciatis, provident debitis porro commodi sapiente laborum perferendis animi at. Aut!</p>
+      <p>Blanditiis quis ut, minima mollitia accusamus explicabo sunt eaque provident quod aperiam. Iusto, aut, obcaecati. Expedita, obcaecati, odit!</p>
+      <p>Obcaecati libero animi architecto accusamus adipisci alias earum doloremque, est totam perspiciatis provident quisquam, cupiditate sint, esse voluptate.</p>
+      <p>Officia facere eaque voluptates error quibusdam expedita, perferendis voluptatem rerum, unde totam debitis deserunt eum repellat cum sapiente.</p>
+      <p>Alias tempora tempore similique aspernatur quae sapiente quam, vitae esse voluptatem deserunt, libero aliquid molestiae in modi recusandae?</p>
+      <p>Porro accusamus incidunt recusandae ipsam doloribus, molestias, quam odit officia nesciunt culpa unde exercitationem corrupti officiis natus consequatur!</p>
+      <p>Ducimus earum molestiae ullam distinctio ipsa tenetur qui facilis in, quod eum non sint modi voluptatum, suscipit, quasi.</p>
+      <p>Sed optio deleniti non praesentium ipsum cum nihil, mollitia fugiat modi laboriosam ipsa fuga, necessitatibus, voluptate eaque tenetur.</p>
+      <p>Doloribus, excepturi quisquam? Provident, nesciunt, modi. Ab laboriosam iusto corrupti commodi quas distinctio voluptate aliquam eum sapiente repellat.</p>
+      <p>Fugit voluptatem, et officia asperiores vero porro obcaecati blanditiis dignissimos ad soluta maiores sequi rerum, possimus! Ipsa, doloremque.</p>
+      <p>Harum quisquam, a est architecto soluta minima at quae repellendus laboriosam dignissimos debitis perspiciatis voluptates distinctio blanditiis nihil.</p>
+      <p>Sunt, nobis, necessitatibus. Commodi voluptatibus at, quo necessitatibus tempore quisquam, nobis explicabo. Corporis, nihil! Accusantium quod dolore natus.</p>
+      <p>Tempore ea architecto recusandae. Ut qui, corrupti vero dolorum eaque perferendis nihil molestias dolorem at! Pariatur, laudantium, odit?</p>
+      <p>Velit tempore totam voluptate molestias, est dolor, aperiam odio, quaerat enim ipsa pariatur. In, dolore? Facilis, est porro!</p>
+      <p>Culpa quod sapiente, labore. Nemo at fugiat architecto rerum totam odio, saepe commodi consequatur sapiente vero aliquid dolores!</p>
+      <p>Qui odio quod, impedit deleniti illum voluptate harum. Doloribus enim ipsa distinctio ullam voluptas optio sequi fugit vel.</p>
+   </div>
+
+
+
+   <script src="recursos/jquery/jquery-3.2.0.min.js"></script>
+
+   <script src="intro.js"></script>
+
+</body>
+</html>
