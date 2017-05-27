@@ -1,0 +1,34 @@
+$header_height: 4rem;
+
+#cabecera,
+#pie-pagina,
+#principal
+{
+   @extend .container-fluid;
+}
+
+
+#cabecera, #pie-pagina {
+   position: fixed;
+   @extend .w-100-v;
+
+   background-color: #fff;
+   z-index: 99;
+
+   // lo mismo que:
+   // width: 100vw;
+}
+
+
+#cabecera {
+   height: $header_height;
+   top:0;
+}
+
+#principal {
+   padding-top: $header_height;
+}
+#pie-pagina {
+   height: 3rem;
+   bottom: 0;
+}

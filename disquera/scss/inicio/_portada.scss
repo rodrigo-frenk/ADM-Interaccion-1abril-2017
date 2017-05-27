@@ -1,0 +1,9 @@
+#portada {
+
+   @extend .container-fluid;
+   @extend .h-xs-60-v;
+   @extend .h-md-70-v;
+
+   background-color: #aaa;
+
+}

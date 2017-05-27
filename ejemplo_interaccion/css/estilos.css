@@ -1,0 +1,61 @@
+* {
+  outline: 1px solid #def;
+}
+
+html,
+body {
+
+  /*w100%*/
+  /*h100%*/
+  width: 100%;
+  height: 100%;
+
+  /*m0*/
+  margin: 0;
+
+
+}
+
+.caja {
+
+  width: 100vw;
+  height: 100vh;
+
+  display: block;
+  /* impide que tamaño de elemento varie si tiene padding o margin */
+  box-sizing: border-box;
+
+  text-align: center;
+
+
+   overflow-y: hidden;
+
+}
+
+
+.caja:nth-child(even) {
+  background-color: #fff;
+}
+
+.caja:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.caja:nth-child(2) {
+  background-color: #aef;
+}
+
+
+.caja * {
+   opacity: 0;
+   position: relative;
+   top:100%;
+
+   transition: opacity 2.5s ease, top 0.5s ease;
+
+}
+
+.caja .visible {
+   opacity: 1;
+   top: 0;
+}

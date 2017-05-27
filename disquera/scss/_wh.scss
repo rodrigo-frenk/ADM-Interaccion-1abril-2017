@@ -1,0 +1,62 @@
+
+$breakpoints: (
+xs 0px,
+sm 640px,
+md 1024px,
+lg 1200px,
+xl 1600px
+);
+
+$num_steps: 20;
+$step: 5;
+$step_value_pct:5%;
+$step_value_vh:5vh;
+$step_value_vw:5vw;
+
+$unit_height: 72px;
+$num_units: 10;
+
+@for $i from 0 through $num_units {
+
+   .h-#{($i)}x {
+      height: $i * $unit_height;
+   }
+
+}
+
+@for $i from 1 through $num_steps {
+
+   // percentage
+   .w-#{($i * $step)} { width: $step_value_pct * $i; }
+   .h-#{($i * $step)} { height: $step_value_pct * $i; }
+
+   .w-#{($i * $step)}-v { width: $step_value_vw * $i; }
+   .h-#{($i * $step)}-v { height: $step_value_vh * $i; }
+
+}
+
+@each $breakpoint in $breakpoints {
+
+
+   @media screen and (min-width: #{nth($breakpoint,2)}) {
+
+      @for $i from 0 through $num_units {
+
+         .h-#{nth($breakpoint,1)}-#{($i)}x {
+            height: $i * $unit_height;
+         }
+
+      }
+
+      @for $i from 1 through $num_steps {
+
+         // percentage
+         .w-#{nth($breakpoint,1)}-#{($i * $step)} { width: $step_value_pct * $i; }
+         .h-#{nth($breakpoint,1)}-#{($i * $step)} { height: $step_value_pct * $i; }
+
+         // viewport percentage
+         .w-#{nth($breakpoint,1)}-#{($i * $step)}-v { width: $step_value_vw * $i; }
+         .h-#{nth($breakpoint,1)}-#{($i * $step)}-v { height: $step_value_vh * $i; }
+      }
+   }
+}
